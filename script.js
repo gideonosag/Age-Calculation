@@ -4,7 +4,7 @@ function calc(birthyear) {
   return 2026 - birthyear;
 }
 
-const years = [1991, 1890, 1999, 2000, 2002, 2004, 2020];
+const years = [1980, 1890, 1999, 2000, 2002, 2004, 2020];
 
 const age1 = calc(years[0]);
 const age2 = calc(years[1]);
@@ -37,12 +37,24 @@ years[years.length - 1] = 2025;
 
 console.log(years);
 
+
+
+function strFormula (str){
+ const message = str >= 45 ? "Eligible" : "Not Eligible"; 
+ return message; 
+}
+const result = strFormula(ages[0]); 
+console.log(result);
+
+/*
 let message;
+
 
 if ((age1) => 40) {
   message = "You are in your mid age";
 } else {
   message = "You're not yet in your mid age";
 }
-
 console.log(message);
+*/
+
